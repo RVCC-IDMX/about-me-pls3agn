@@ -1,0 +1,40 @@
+body {
+    color: #dfdedc  ;
+    background-color: #3a3a3a;
+    font-family: Aboreto;
+    font-weight: 900;
+}
+
+header {
+   text-align: center; 
+   
+}
+
+h1 {
+    font-family: "Rubik Broken Fax";
+    font-size: 600%;
+    font-weight: 20;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Rubik Broken Fax";
+    font-size: 200%;
+    font-weight: 20;
+}
+
+#hero, footer {
+    text-align: center;
+    background-color: #4a4737;
+    color: #dfdedc;
+    padding: 20px;
+    border: 10px outset #8a866e;
+    border-radius: 100px;
+}
+#hero img {
+    width: 250px;
+}
+
+#bio, #info {
+    text-align: center;
+}
