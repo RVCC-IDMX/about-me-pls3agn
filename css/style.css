@@ -48,6 +48,7 @@ h2 {
 #gallery {
     border: 50px double #615B31;
     border-radius: 100px;
+    margin-bottom: 2rem;
 }
 
 #gallery hr {
@@ -65,4 +66,35 @@ h2 {
 #gallery figure {
     text-align: center;
     padding: 10px;
+}
+
+/* Literature */
+
+#lit {
+    border: 20px ridge #dfdedc;
+    margin-bottom: 2rem;
+
+}
+
+#lit div {
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p {
+    padding: 1rem;
+}
+
+/* Dropcaps */
+
+#lit div p:first-letter {
+    color:#615B31;
+    background-image: linear-gradient(#fff, #615b31);
+    float: left;
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    line-height: .65;
+    border: 5px solid #615B31
 }
