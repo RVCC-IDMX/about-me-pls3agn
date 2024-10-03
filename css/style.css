@@ -42,3 +42,27 @@ h2 {
 #hobbies {
     text-align: center;
 }
+
+/* Gallery */
+
+#gallery {
+    border: 50px double #615B31;
+    border-radius: 100px;
+}
+
+#gallery hr {
+    border-bottom: 50px double #615B31;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#gallery img {
+    max-width: 100%;
+    border: 20px solid #dfdedc;
+}
+
+#gallery figure {
+    text-align: center;
+    padding: 10px;
+}
