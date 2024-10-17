@@ -21,6 +21,7 @@ h2 {
     font-family: "Rubik Broken Fax";
     font-size: 200%;
     font-weight: 20;
+    margin: .1rem;
 }
 
 #hero, footer {
@@ -40,7 +41,9 @@ h2 {
 }
 
 #hobbies {
-    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
 /* Gallery */
@@ -66,8 +69,18 @@ h2 {
 #gallery figure {
     text-align: center;
     padding: 10px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
 }
 
+#gallery figcaption {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 3rem;
+
+}
 /* Literature */
 
 #lit {
@@ -80,6 +93,8 @@ h2 {
     padding: 2rem;
     max-width: 40rem;
     margin: 0 auto;
+    max-width:100%;
+    columns: 40rem;
 }
 
 #lit div p {
@@ -97,4 +112,8 @@ h2 {
     margin-right: 1rem;
     line-height: .65;
     border: 5px solid #615B31
+}
+
+@media screen {
+    min-width: 60em;
 }
