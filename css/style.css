@@ -175,4 +175,50 @@ h2 {
 
 #formelements {
     display: grid;
+    row-gap: .5em;
+}
+
+#contact {
+    padding: 1rem;
+    max-width: 6000px;
+    margin: 2rem auto;
+
+}
+
+fieldset {
+    border: 25px double #615B31;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 2rem;
+
+}
+
+legend {
+    background-color: #615B31;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li {
+    margin: 1rem;
+}
+
+#contact button {
+    background-color: #615B31;
+    color: white;
+    border: 1px solid #8a866e;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
 }
