@@ -24,16 +24,76 @@ main {
 
 /* navbar */
 
-.navbar {
+.navbar-links {
     background-color: #8a866e;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
     padding: 1rem;
-
+    position: relative;
 }
 
+.nav-toggle {
+    position: absolute;
+    cursor: pointer;
+    right: 1rem;
+    top: 1rem;
+}
+
+.menu {
+    width: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.close {
+    width: 1.5rem;
+    display: none;
+}
+
+.nav-checkbox {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+    width: 100%;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-checkbox:checked ~ .nav-menu {
+    display: flex; 
+}
+
+.nav-checkbox:checked + .nav-toggle .menu {
+    display: none;
+}
+
+.nav-checkbox:checked + .nav-toggle .close {
+    display: block;
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-menu {
+        width: auto; 
+        background-color: #8a866e; 
+    }
+
+    .nav-menu li {
+        margin: 0; /* Align items properly */
+    }
+}
+    
 /* logo */
 
 .logo {

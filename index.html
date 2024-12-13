@@ -12,6 +12,24 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -24,13 +42,24 @@
         <nav class="navbar">
             <div class="logo">
                 <img 
-                src="img/logo-96X96.svg" 
+                src="img/kb-logo.svg" 
                 class="log-img"
-                alt="A blue origami bird">
+                alt="Logo made of the letters K B">
                 <h1>Web Dev 1</h1>
             </div>
+            
             <div class="navbar-links">
-                <ul>
+                <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+                <label for="nav-checkbox" class="nav-toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
+                    
+                <ul class="nav-menu">
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#lit">Blog</a></li>
@@ -46,7 +75,7 @@
         <!--the main contains important page content-->
 
         <section id="hero">
-            <img src="img/avataaars.png" alt="A bald avatar wearing overalls">
+            <img src="img/Me-picture.jpg" alt="A bald avatar wearing overalls">
             <div>
                 <p>Kai Bobrow</p>
                 <p>Fanwood, NJ</p>
@@ -57,12 +86,10 @@
 
             <!--Biographical information-->
 
-            <h2>I want to...</h2>
-            <ul>
-                <li>be big</li>
-                <li>eat cheese</li>
-                <li>get money</li>
-            </ul>
+            <h2>Biography</h2>
+            <p>
+                My name is Kai Bobrow.  I was born in Manhattan and lived in Jersey City until I was 9 years old.  I moved to Fanwood, New Jersey after that and have lived there ever since.  After high school I went to Fordham University in the Bronx but after 3 semesters there, had to transfer to stay closer to home.  I’m finishing my first semester at RVCC currently and have enjoyed it thoroughly.  I still am not sure what major I want to pursue but I plan on transferring again at some point in the future when I decide.  I have a passion for art and writing but also enjoy learning as much as I can about other subjects like web design and development.  I love to cook and I love to eat and whenever I get the chance to make my friends a home cooked meal I take it.  My favorite movie is Grosse Pointe Blank starring John Cusack; I’m a sucker for 90s romcoms.  My favorite album is Ram by Paul McCartney, but I’m not sure I dislike any Beatles album.  I have 5 pets: 3 dogs and 2 cats.  The dogs are named Emma, Summer, and Thor (he’s terrified of thunder) and the cats are named Serena and Sammy.  I love them all equally (I swear) but if I had to pick I’d say I’m more of a dog person.  All three of my dogs are little and I wouldn’t want it any other way!
+            </p>
 
         </section>
 
@@ -70,11 +97,12 @@
 
             <!--some extra info-->
 
-            <h2>Interests:</h2>
+            <h2>Some of My Favorite Things</h2>
             <ul>
-                <li>Jewlery Making</li>
-                <li>Metalsmithing</li>
-                <li>Photography</li>
+                <li>The rain</li>
+                <li>Art made of metal</li>
+                <li>Silence</li>
+                <li>People</li>
             </ul>
 
         </section>
@@ -83,11 +111,13 @@
 
             <!--a list of my hobbies-->
 
-            <h2>My hobbies</h2>
+            <h2>Some of My Hobbies</h2>
             <ul>
                 <li>Jewlery Making</li>
                 <li>Film Photography</li>
                 <li>Boxing</li>
+                <li>Cooking</li>
+                <li>Baking</li>
             </ul>
         </section>
 
@@ -213,7 +243,9 @@
     </main>
 
     <footer>
-        &copy; 2024 Kai Bobrow
+        &copy; 2024 Kai Bobrow 
+        <hr>
+        <a href="https://github.com/RVCC-IDMX/about-me-pls3agn" target="_blank">Github Repo</a>
     </footer>
 
 </body>
