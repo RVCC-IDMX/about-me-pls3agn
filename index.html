@@ -13,23 +13,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+
 </head>
 
 <body>
@@ -58,7 +43,7 @@
                         <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
                     </svg>
                 </label>
-                    
+
                 <ul class="nav-menu">
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -75,7 +60,7 @@
         <!--the main contains important page content-->
 
         <section id="hero">
-            <img src="img/Me-picture.jpg" alt="A bald avatar wearing overalls">
+            <img src="img/Me-picture.jpg" alt="A picture of me, Kai Bobrow">
             <div>
                 <p>Kai Bobrow</p>
                 <p>Fanwood, NJ</p>
@@ -141,28 +126,40 @@
         </section>
 
         <article id="lit">
-            <h2>An Excpert From Pride and Prejudice</h2>
+            <h2>A Little Blog Post About Embeded Static Google Map Using iframe</h2>
 
             <div>
 
-                <p>“Oh! where, where is my uncle?” cried Elizabeth, darting from her seat as she finished the letter, in eagerness to follow him, without losing a moment of the time so precious; but as she reached the door it was opened by a servant, and Mr. Darcy appeared. Her pale face and impetuous manner made him start, and before he could recover himself to speak, she, in whose mind every idea was superseded by Lydia’s situation, hastily exclaimed, “I beg your pardon, but I must leave you. I must find Mr. Gardiner this moment, on business that cannot be delayed; I have not an instant to lose.”</p>
+                <p>I chose to write a little blog about how to embed a static Google Map using an iframe. Below I’ve added an example of this. Embedding a static Google Map using an iframe is a fairly easy process in HTML, and finding the code in Google Maps is simple. There are many benefits to using an iframe for displaying a map on your website. It is very easy to set up—there’s no need for API integration or advanced coding expertise. Additionally, it is free for basic use: Google Maps embeds via iframe don’t require an API key or incur usage charges. Using this method is also maintenance-free; the map dynamically updates if changes are made in Google Maps.</p>
 
-                <p>“Good God! what is the matter?” cried he, with more feeling than politeness; then recollecting himself, “I will not detain you a minute; but let me, or let the servant go after Mr. and Mrs. Gardiner. You are not well enough; you cannot go yourself.”</p>
+                <p>The first step to embedding a static Google Map using an iframe is to go to Google Maps and search for the location you want to display. Then, click “Share” and navigate to the “Embed a map” tab to find the iframe code. Simply copy the code and paste it into your website where you want the map to appear. It’s good practice to wrap the iframe code in a div with a class name for easier CSS styling.</p>
 
-                <p>Elizabeth hesitated, but her knees trembled under her and she felt how little would be gained by her attempting to pursue them. Calling back the servant, therefore, she commissioned him, though in so breathless an accent as made her almost unintelligible, to fetch his master and mistress home instantly.</p>
+                <p>The iframe code includes several attributes that allow for customization. The src is the URL containing the map’s location and configuration. The width and height attributes define the dimensions of the map on your page. The loading="lazy" attribute delays the map's loading until it becomes visible on the screen, which improves page performance. Finally, the allowfullscreen attribute allows users to open the map in full-screen mode.</p>
 
-                <p>On his quitting the room she sat down, unable to support herself, and looking so miserably ill, that it was impossible for Darcy to leave her, or to refrain from saying, in a tone of gentleness and commiseration, “Let me call your maid. Is there nothing you could take to give you present relief? A glass of wine; shall I get you one? You are very ill.”</p>
+                <p>For a better user experience and responsive design, it’s recommended to add extra formatting to your map. Nesting the iframe inside a div element with a map-container class allows developers to apply CSS styles for responsiveness. For example, using a padding-bottom trick with relative positioning can help maintain the map’s aspect ratio across different devices.</p>
 
-                <p>“No, I thank you,” she replied, endeavouring to recover herself. “There is nothing the matter with me. I am quite well; I am only distressed by some dreadful news which I have just received from Longbourn.”</p>
+                <p>While an iframe is straightforward to set up, it’s worth noting its limitations. The map’s interactivity is confined to what’s provided by Google’s embed features, and advanced customizations like adding custom markers or overlays require using the Google Maps JavaScript API. However, for most basic applications, the iframe method is sufficient.</p>
 
-                <p>She burst into tears as she alluded to it, and for a few minutes could not speak another word. Darcy, in wretched suspense, could only say something indistinctly of his concern, and observe her in compassionate silence. At length she spoke again. “I have just had a letter from Jane, with such dreadful news. It cannot be concealed from anyone. My younger sister has left all her friends--has eloped; has thrown herself into the power of--of Mr. Wickham. They are gone off together from Brighton. You know him too well to doubt the rest. She has no money, no connections, nothing that can tempt him to--she is lost for ever.”</p>
+                <p>Embedding a Google Map with an iframe is a reliable solution for users who prioritize simplicity and efficiency. It’s a perfect choice for showcasing a business location, event venue, or any point of interest without requiring extensive technical work. Plus, since the map reflects updates made in Google Maps, there’s no need to manually update it on your site.</p>
 
-                <p>Darcy was fixed in astonishment. “When I consider,” she added in a yet more agitated voice, “that I might have prevented it! I, who knew what he was. Had I but explained some part of it only--some part of what I learnt, to my own family! Had his character been known, this could not have happened. But it is all--all too late now.”</p>
-
-                <p>“I am grieved indeed,” cried Darcy; “grieved--shocked. But is it certain--absolutely certain?”</p>
+                <p>Whether you’re a beginner learning HTML or an experienced developer looking for a quick solution, embedding a Google Map using an iframe is an excellent way to enhance your website’s usability, providing valuable location information to your audience while keeping your workflow simple.</p>
 
             </div>
         </article>
+
+        <section id="map">
+            <div class="map-container">
+            <iframe 
+            id="myMap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.9013226017264!2d-74.69076152409575!3d40.610000743853824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3937dc5acab1f%3A0x15e7f0de30681faa!2sRaritan%20Valley%20Community%20College!5e0!3m2!1sen!2sus!4v1734061781232!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
 
         <section id="video">
 
